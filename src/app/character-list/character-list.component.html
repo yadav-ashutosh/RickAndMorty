@@ -1,0 +1,11 @@
+<mat-list>
+  <mat-list-item
+    *ngFor="let character of characters"
+    [routerLink]="['/character', character.id]"
+  >
+    <h4 matLine>{{ character.name }}</h4>
+    <button mat-icon-button [routerLink]="['/character', character.id]">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>
